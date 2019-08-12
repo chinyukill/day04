@@ -9,7 +9,7 @@ import org.apache.commons.dbutils.handlers.ArrayListHandler;
 import cn.deyang.jdbcutils.JDBCUtils;
 
 /**
- * ²âÊÔĞ´ºÃµÄ¹¤¾ßÀà
+ * ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ÃµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½
  * @author chenxue
  *
  */
@@ -18,16 +18,16 @@ public class QueryRunnerDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		insert();
+		insert();
 		query();
 	}
 
 	
 	private static QueryRunner qr=new QueryRunner(JDBCUtils.getDataSource());
-	//Êı¾İ±íµÄÌí¼Ó
+	//ï¿½ï¿½ï¿½İ±ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static void insert() {
 		String sql="insert into sort2(sname,sprice,sdesc)values(?,?,?)";
-		Object[] params= {"ÆÏÌÑ",4.00,"Ê®¿éÈı½ï"};
+		Object[] params= {"è‘¡è„",4.00,"åå—ä¸‰æ–¤"};
 		try {
 			int row = qr.update(sql,params);
 			System.out.println(row);

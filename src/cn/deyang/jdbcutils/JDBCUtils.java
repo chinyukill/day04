@@ -1,8 +1,8 @@
 package cn.deyang.jdbcutils;
 /*
- * Ê¹ÓÃDBCPÊµÏÖÊý¾Ý¿âµÄÁ¬½Ó³Ø
- * Á¬½Ó³ØÅäÖÃ×Ô¶¨ÒåÀà
- * ¶ÔÓÚÊý¾Ý¿âÁ¬½Ó³ØÆäËûµÄÑ¡ÔñÅäÖÃ
+ * Ê¹ï¿½ï¿½DBCPÊµï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½
+ * ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 import javax.sql.DataSource;
@@ -15,14 +15,14 @@ public class JDBCUtils {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/test?useSSL=false");
 		dataSource.setUsername("root");
-		dataSource.setPassword("123456");
-		//³õÊ¼Á¬½ÓÊý
+		dataSource.setPassword("root");
+		//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		dataSource.setInitialSize(10);
-		//×î´óÁ¬½ÓÊý
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		dataSource.setMaxActive(15);
-		//×î´ó¿ÕÏÐÊý
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		dataSource.setMaxIdle(5);
-		//×îÐ¡¿ÕÏÐÊý
+		//ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		dataSource.setMinIdle(1);
 	}
 	public static DataSource getDataSource() {
